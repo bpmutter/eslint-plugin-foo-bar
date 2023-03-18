@@ -5,7 +5,7 @@
   "main": "eslint-plugin-foo-bar.js",
   "scripts": {
     "test": "jest",
-    "publish": "np"
+    "publish": "np --yarn false"
   },
   "keywords": [
     "eslint",
