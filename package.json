@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-foo-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint plugin for foo-bar rule.",
   "main": "eslint-plugin-foo-bar.js",
   "scripts": {
