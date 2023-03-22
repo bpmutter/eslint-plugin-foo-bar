@@ -2,7 +2,8 @@
 
 - [x] write rule draft
 - [x] write tests and make rule pass
-- [ ] set up plugin
+- [x] set up plugin
 - [ ] publish plugin
+- [ ] test published plugin
 - [ ] tutorialize
 - [ ] review tutorial
