@@ -5,8 +5,12 @@ module.exports = {
         es2021: true,
     },
     extends: ["eslint:recommended"],
-    plugins: ["jest"],
     parserOptions: {
         ecmaVersion: "latest"
+    },
+    // Using the eslint-plugin-foo-bar plugin downloaded from npm
+    plugins: ["foo-bar"],
+    rules: {
+        "foo-bar/foo-bar": "error",
     },
 }
