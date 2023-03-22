@@ -16,7 +16,7 @@ module.exports = {
                     // Check if variable name is `foo`
                     if(node.declarations[0].id.name === "foo") {
                         // Check if value of variable is "bar"
-                        if (node.declaration.init.value !== "bar") {
+                        if (node.declarations[0].init.value !== "bar") {
                             // Report error to ESLint. Error message uses
                             // a message placeholder to include the incorrect value
                             // in the error message.
@@ -26,10 +26,10 @@ module.exports = {
                                 node,
                                 message: 'Value other than "bar" assigned to `const foo`. Unexpected value: {{ notBar }}',
                                 data: {
-                                    notBar: node.declaration.init.value
+                                    notBar: node.declarations[0].init.value
                                 },
                                 fix(fixer) {
-                                    return fixer.replaceText(node.declaration.init, "bar");
+                                    return fixer.replaceText(node.declarations[0].init, '"bar"');
                                 }
                             });
                         }
